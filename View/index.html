@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/style.scss" type="text/css"/>
+        <title>Anomaly Detection Server</title>
+    
+    </head>
+    <body>
+        <form action="/api/detect" method="POST" enctype="multipart/form-data" name="all_detect" target="result">
+            
+        
+            <table>
+                <h1>Anomaly Detection Server</h1>
+               
+                <th>
+                                <input type="file" name="learn_file" id="file" class="inputfile" accept=".csv" />
+                                <label for="file">Choose learn file</label> 
+                                <input type="file" name="test_file" id="file2" class="inputfile" accept=".csv" />
+                                <label for="file2">Choose test file</label>
+                </th>
+                <th>
+                    <select name=Algoritem> 
+                        <option value="0">Select Algoritem:</option>
+                        <option value="hybrid">Hybrid</option>
+                        <option value="regression">Regression</option>
+                    </select>
+                    <input type="submit" name="submit" id="sub" class="sub" />
+                    <label for="sub">submit</label>
+                    
+                </th>
+               
+            </table>
+           
+        </form>
+        <br>
+        <iframe name="result" width="80%" height="500">
+        </iframe>
+    </body>
+</html>
+
