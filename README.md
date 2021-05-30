@@ -61,7 +61,7 @@ To run from 'PostMan':
 * Press send.
 
 Documentation:
-![Image of UML](https://github.com/YeheliF/WebApp/blob/master/UML.jpg)
+![Image of UML](UML.jpeg)
 You can see in the UML the MVC architecture.
 We have a html file that is the View of the html page.
 We have a js file that is the Controller of the html that implement the HTTP commands (post,get) , and it connect between the view and the model.
